@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Who dat Ninja?!</title>
+    
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/a0/1f/00/a01f0063f52737f60b69771cba0cee18.png">
+
+    <!-- Custom fonts for this template-->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+        
+    <!--Datatables-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/dataTables.bootstrap4.min.css" 
+          integrity="sha512-PT0RvABaDhDQugEbpNMwgYBCnGCiTZMh9yOzUsJHDgl/dMhD9yjHAwoumnUk3JydV3QTcIkNDuN40CJxik5+WQ==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+          
+    <!--JQuery UI-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+    <!-- Custom styles for this template-->
+    {{ main_css }}
+
+</head>
+
+<body id="page-top">
+    <div id="all-data" 
+        data-users='{{ all_users }}'
+        data-tags='{{ all_tags }}'
+        style="display: none">
+    </div>
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="sidebar sidebar-dark bg-gradient-primary" id="accordionSidebar">
+            
+            <ul class="navbar-nav accordion">
+
+                <!-- Sidebar - Brand -->
+                <a class="sidebar-brand d-flex align-items-center justify-content-center smooth-scroll" href="#page-top">
+                    <div class="sidebar-brand-icon rotate-n-15">
+                        <i class="fas fa-user-ninja"></i>
+                    </div>
+                    <div class="sidebar-brand-text mx-3">Who dat Ninja<sup>?!</sup></div>
+                </a>
+    
+                <!-- Divider -->
+                <hr class="sidebar-divider mt-0 mb-5">
+    
+                <li class="nav-item active">
+                    <a class="nav-link smooth-scroll" href="#what-the-what">
+                        <i class="fas fa-fw fa-info"></i>
+                        <span>What The What</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link smooth-scroll" href="#find-dat-ninja">
+                        <i class="fas fa-fw fa-search"></i>
+                        <span>Find Dat Ninja</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link smooth-scroll" href="#edit-dat-ninja">
+                        <i class="fas fa-fw fa-user-edit"></i>
+                        <span>Manage Dat Ninja</span></a>
+                </li>
+    
+                <!-- Divider -->
+                <hr class="sidebar-divider d-none d-md-block mt-5">
+    
+                <!-- Sidebar Toggler (Sidebar) -->
+                <div class="text-center d-none d-md-inline">
+                    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                </div>
+            
+            </ul>
+
+        </div>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                
+                <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                <!-- Begin Page Content -->
+                <div id="content-box" class="container-fluid">
+
+                    <!-- Content Row -->
+
+                    <div class="row">
+                        
+                        <div class="col-12" id="what-the-what">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">What The What?</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <h2 class="mb-5">こんにちは！</h2>
+                                        <h3 class="mb-4 mt-3">You are here for one of these two reasons: </h3>
+                                        <p class="mb-4">You are looking for a highly skilled ninja, who will help you completing a quest you embarked upon. For that scroll down to <a class="smooth-scroll" href="#find-dat-ninja"><strong>Find Dat Ninja</strong></a> section and start your search there!</p>
+                                        <p class="mb-4">Another reason would be that you want to enter (or amend an entry of) you or someone you know to our ninja database. Scroll down to <a class="smooth-scroll" href="#manage-dat-ninja"><strong>Manage Dat Ninja</strong></a> to complete your destiny!</p>
+                                        <p class="mb-4"><strong>Ninja Please!</strong> This database is built and managed by the good will of our SSTK community. When adding / updating data, please make sure you are leaving this site in a better shape than you found it. Also, if you find out about a ninja that is missing in our database, that their responsibilities have changed or is no longer with us - please update the database!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12" id="find-dat-ninja">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Find Dat Ninja</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        
+                                        <p style="display: none">
+                                            <a href="?hello=true">Hello</a> <a href="?foo=bar">Foo</a>
+                                        </p>
+                                        
+                                        <div class="alert alert-primary">
+                                            Search ninjas using tags that best describe your problem. Generalise your search if no results were found.<br/>
+                                            Tip: To see a full list of ninjas, leave the <strong>Selected tags</strong> box empty. You can then use <strong>Search</strong> box for partial searches of all fields.
+                                        </div>
+                                        
+                                        Available tags, click to add:
+                                        <div id="tags-to-choose" data-tags='{{ all_tags }}' ></div>
+                                        Selected tags, click to remove:
+                                        <div id="chosen-tags"></div>
+                                        <div id="search-result" class="mt-2" data-users='{{ all_users }}'></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12" id="edit-dat-ninja">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Manage Dat Ninja</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        
+                                        <div class="alert alert-primary">
+                                            To add new ninja just fill out the form and hit <strong>Add Ninja</strong>.<br/>
+                                            To find and edit an existing ninja, use email field - when an existing email is entered, you will see that the button at the bottom of the form changes to <strong>Edit Ninja</strong><br/>
+                                            Tip on team: If possible, try to use the team code, e.g. Cloud Storage would be CLDSTORE.<br/>
+                                            Tip on tags: Use existing tags that best describe ninjas skills and responsibilities. Add new tags if the existing tags miss something. The more and the more detailed tags the better!
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <input id="email-field" 
+                                                       type="email" 
+                                                       class="form-control bg-light" 
+                                                       placeholder="Enter email..." 
+                                                       aria-label="Email">
+                                            </div>
+                                            
+                                            <div class="col-12 mb-3">
+                                                <input id="name-field" 
+                                                       type="text"
+                                                       class="form-control bg-light" 
+                                                       placeholder="Enter full name..." 
+                                                       aria-label="Name">
+                                            </div>
+                                            
+                                            <div class="col-12 mb-3">
+                                                <input id="team-field" 
+                                                       type="text"
+                                                       class="form-control bg-light" 
+                                                       placeholder="Enter team name..." 
+                                                       aria-label="Team">
+                                            </div>
+                                            
+                                            <div class="col-10 mb-3">
+                                                <input id="tag-field" 
+                                                       type="text"
+                                                       class="form-control bg-light" 
+                                                       placeholder="Enter tag..."
+                                                       aria-label="Tag">
+                                            </div>
+                                            
+                                            <div class="col-2 mb-3">
+                                                <button id="tag-submit" 
+                                                        class="btn btn-primary btn-block" 
+                                                        type="button" 
+                                                        disabled>
+                                                    Add Tag
+                                                </button>
+                                            </div>
+                                            
+                                            <div class="col-12 mb-3">
+                                                Selected Tags:
+                                                <div id="user-tags"></div>
+                                            </div>
+                                            
+                                            <div class="col-12 mb-3">
+                                                <button id="user-submit" 
+                                                        class="btn btn-primary btn-block" 
+                                                        type="button" 
+                                                        disabled>
+                                                    Add / Edit Ninja
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+                
+                {{ event }}
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Did you figure out Who Dat Ninja?!</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+            crossorigin="anonymous"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+    <!--Datatables-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" 
+            integrity="sha512-BkpSL20WETFylMrcirBahHfSnY++H2O1W+UnEEO4yNIl+jI2+zowyoGJpbtk6bx97fBXf++WJHSSK2MV4ghPcg==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+    <!--JQuery UI-->
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    {{ main_js }}
+    {{ tags_js }}
+    {{ edit_js }}
+
+
+</body>
+
+</html>
